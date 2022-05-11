@@ -1,0 +1,49 @@
+div {  
+    margin: 40px auto;
+}
+
+.alinhar {
+    text-align: center;
+}
+
+ div img{
+    margin: auto;
+    display: block;
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(8px 8px 10px #333)
+}
+.filtro {
+    filter: grayscale(100%) 
+    
+}
+.filtro:hover {
+    filter: grayscale(0%);
+}
+
+#grafico-01 img {
+    width: 65%;
+    height: auto;
+    
+}
+
+
+#grafico-02 {
+    background: transparent;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+}
+
+#imagem-vetorial {
+    width: 100px;
+}
+
+#canvas {
+    height: 300px;
+    width: 300px;
+}
