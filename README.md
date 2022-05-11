@@ -16,3 +16,6 @@ Fluxo do Git
 -develop
 -DOD
 -versionamento 1.0.0
+
+## Merge
+mescla de branchs
