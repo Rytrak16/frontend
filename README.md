@@ -1,5 +1,4 @@
 # frontend
-# curso-frontend 
 ## Clonar projeto 
 git clone https://github.com/Rytrak16/frontend.git
 
