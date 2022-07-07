@@ -154,6 +154,10 @@ footer small {
     width: 50%;
     background-color: #fff;
     }  
+
+
+    
+
 @media (max-width: 768px) {
     section nav,
     section article {
@@ -166,6 +170,11 @@ footer small {
         padding-right: 1%;
         
     }
+    #saiba-mais .button-cta,
+    #perguntas-frequentes .button-cta {
+        margin-right: 25%
+    }
+   
     body {
         text-align: center;
     }
@@ -175,9 +184,68 @@ footer small {
         width: 50%;
              
     }
+    #saiba-mais img,
+    #saiba-mais p{
+        margin-left: 25%;
+        text-align: left;
+    }
+    #perguntas-frequentes h1 {
+        margin-left: 25% !important;
+        margin-right: 50px;
+        text-align: left;
+    }
+    dl
+    {
+        margin-left: 25% !important;   
+        text-align: left;   
+    }
+
     
 }
-
+@media (max-width: 320px) {
+    
+    section nav,
+    section article {
+        width: 100%;
+            
+    }  
+    
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+            
+    }
+    #saiba-mais .button-cta,
+    #perguntas-frequentes .button-cta {
+        margin-right: 65px;
+    }
+    body {
+        text-align: center;
+    }
+    .Tenhointeresse {
+        text-align: left;
+        margin-left: 30%;
+        width: 50%;
+                 
+    }
+    #saiba-mais img,
+    #saiba-mais p{
+        margin-left: 75px;
+        text-align: left;
+    }
+    #perguntas-frequentes h1 {
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+    dl,
+    dt,
+    dd {
+        margin-left: 50px !important;
+        margin-right: 70px;
+        text-align: left;
+    }
+    
+}
 #banner {
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
@@ -238,10 +306,15 @@ footer small {
     background-color: #b8c8d6;
     padding-top: 40px;
     padding-bottom: 40px;
+    
+}
+
+#perguntas-frequentes h1 {
+    margin-left: 50px;
 }
 
 dl {
-    margin: 20px 0 ;
+    margin: 20px 20px 0 50px;
 }
 dt {
     font-family: 'Open Sans';
