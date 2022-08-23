@@ -6,20 +6,20 @@ html{
 body {
     background-color: #f5f5f5;
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    
 }
 .main-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
-    
+    overflow: hidden;
 }
 
 .container {
     display: block;
     float: left;
-    padding: 20px;
-    width: 100%;
+    padding: 0;
+    width: 98%;
     margin: 0 auto;
     max-width: 1198px;
     
@@ -29,14 +29,15 @@ header {
     background: #fff;
     display: block;
     float: left;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     border-bottom: 1px solid #254159;
 }
 h1 {
     font-size: 2.4rem;
     color: #254159;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 h2 {
     font-size: 2rem;
@@ -67,8 +68,7 @@ img {
 #tenho-interesse {
     background-color: #b8c8d6;
     width: 100%;
-    display: block;
-    
+    background-color: #fff;
 }
 
 #tenho-interesse form,
@@ -95,7 +95,7 @@ section {
     float: left;
     font-size: 1.5rem;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 section nav {
@@ -130,11 +130,10 @@ section article {
 
 footer {
 background-color: #254159;
-color: #fff;
 display: block;
 float: left;
-padding: 20px;
-width: 100%;
+padding: 20px 0;
+width: 99.9%;
 }
 footer p {
     color: #fff;
@@ -147,13 +146,18 @@ footer small {
 .cognito {
     height: 400px !important;
     overflow: hidden !important;
-    display: block;
+    
     
 }
 .Tenhointeresse {
     margin-left: 32%;
     width: 50%;
+    background-color: #fff;
     }  
+
+
+    
+
 @media (max-width: 768px) {
     section nav,
     section article {
@@ -166,6 +170,11 @@ footer small {
         padding-right: 1%;
         
     }
+    #saiba-mais .button-cta,
+    #perguntas-frequentes .button-cta {
+        margin-right: 25%
+    }
+   
     body {
         text-align: center;
     }
@@ -175,6 +184,148 @@ footer small {
         width: 50%;
              
     }
+    #saiba-mais img,
+    #saiba-mais p{
+        margin-left: 25%;
+        text-align: left;
+    }
+    #perguntas-frequentes h1 {
+        margin-left: 25% !important;
+        margin-right: 50px;
+        text-align: left;
+    }
+    dl
+    {
+        margin-left: 25% !important;   
+        text-align: left;   
+    }
+
+    
+}
+@media (max-width: 320px) {
+    
+    section nav,
+    section article {
+        width: 100%;
+            
+    }  
+    
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+            
+    }
+    #saiba-mais .button-cta,
+    #perguntas-frequentes .button-cta {
+        margin-right: 65px;
+    }
+    body {
+        text-align: center;
+    }
+    .Tenhointeresse {
+        text-align: left;
+        margin-left: 30%;
+        width: 50%;
+                 
+    }
+    #saiba-mais img,
+    #saiba-mais p{
+        margin-left: 75px;
+        text-align: left;
+    }
+    #perguntas-frequentes h1 {
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+    dl,
+    dt,
+    dd {
+        margin-left: 50px !important;
+        margin-right: 70px;
+        text-align: left;
+    }
+    
+}
+#banner {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.legenda-container {
+    width: 30vw;
+    float: right;
+    margin: 40px 0 0 0;
     
 }
 
+.legenda {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .6);
+    margin-bottom: 5rem;
+    float: right;
+}
+
+.legenda h5,
+.legenda h4 {
+    color: #254159;
+    line-height: 150%;
+}
+
+.button-cta {
+    border-radius: 25px;
+    display: inline;
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 1px 1px 4px #454545;
+    padding: 10px 15px;
+    width: auto;
+    text-decoration: none;
+    font-weight: 300;
+    float: right;
+
+}
+
+#saiba-mais {
+    background-color: #eaeff3;
+    padding: 40px 0;
+}
+#saiba-mais p,
+#saiba-mais img {
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+#perguntas-frequentes {
+    background-color: #b8c8d6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+#perguntas-frequentes h1 {
+    margin-left: 50px;
+}
+
+dl {
+    margin: 20px 20px 0 50px;
+}
+dt {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #254159;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
